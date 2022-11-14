@@ -1,4 +1,0 @@
-while :
-do
-grep -c . $1
-done
